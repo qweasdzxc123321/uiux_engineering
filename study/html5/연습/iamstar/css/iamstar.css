@@ -1,0 +1,53 @@
+charset "UTF-8";
+
+#wrap{
+    position: relative
+    width:706px;
+    margin:0 auto;
+    margin:50px auto 0;
+}
+
+header{
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+
+
+header>nav>ul{
+    *zoom:1;
+}
+
+header>h1{/*웹접근성 향상을 위해 h1요소자체를 안드로메다로 보내자*/
+    position:absolute;
+    left:-9999%
+    
+}
+
+header>nav>UL{
+    
+}
+
+header>nav>ul>li{
+    width:74px;
+    text-indent:-9999%
+    outline:1px solid blue;
+}
+
+section{
+    position: absolute;
+    left:0;
+    top:79px;
+    outline:1px solid red;
+}
+
+section>.s{
+    width:706px;
+    height:523px;
+    text-indent:-9999%;
+    background-image:url(../images/big1.jpg)
+    background-cover;
+    background-repeat:no-repeat;
+}
+    

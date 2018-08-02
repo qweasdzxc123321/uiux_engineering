@@ -1,0 +1,144 @@
+@charset "utf-8"; 
+/*기본설정*/
+body{
+    font-size:12px;
+    background-color:#fdfcf0;
+}/*3*/
+
+#wrap{
+    width:1000px;
+    margin:0 ayto;
+}/*102*/
+
+/*헤더영역*/
+header>h1{
+    padding:50px 0 20px;
+    font-size:15px;
+}/*4*/
+/*ㄹㄹ*/
+header>h1+P{
+    line-height:140%;  /*기본값 120%, 1.2*/
+    font-weight:800;  /*기본값 400 */
+}/*5*/
+
+/*ㄹㄹ*/
+
+/*본문영역*/
+
+section{
+    margin:20px 0;
+    /*2*/
+}
+
+section>.guide{/*15*/
+/*    방법1*/
+    padding:40px 0;
+    border:1px solid #e1ddd3 ;
+    border-left:none;
+    border-right:none;
+    /*방법2*/
+/*
+    border-top:1px solid #e1ddd3;
+    border-bottom:1px solid #e1ddd3;
+*/
+}
+/*aa*/
+section>.guide>h3{/*16*/
+    margin-bottom:20px;
+    color:#764d25;
+    font-size:13px;
+    text-indent:30px;
+    
+}
+section>.guide>ul{/*13*/
+    margin-left:30px;
+}
+
+section>.guide>ul>li{/*14*/
+
+    font-weight:600px;
+}
+
+section>.guide>ul>li>span{/*16*/
+    display:block;
+    text-indent:8px;/*margin-left와 같은 결과!!*/
+}
+
+
+
+section>.contact{
+    padding:1px solid black;
+    margin-top:30px;
+   
+}
+section>.contact>h3{
+    margin-bottom:20px;
+    font-size:13px;
+    text-indent:30px;
+}
+section>.contact>div{
+    margin:0 15px 20px 15px;
+    padding:20px 0 20px 20px
+    border:1px solid #e1ddd3;
+}
+section>.contact>div>ul{
+    
+}
+/*문맥선택자는 자손을 선택할 때 사용하는데
+ 한칸공백으로 표현함. !!주의: 선택시 중복되는 요소를 반드시 확인하며, 신중히
+                          문제가 없다는 것이 확실할 때 사용.*/
+section>.contact li{
+    height:18px;
+    line-height:18px;
+    
+}
+section>.contact>div>p{
+    /*height:40px;
+    line-height:40px;*/
+    margin-top:20px;
+    font-weight:600px;
+}
+
+section>.contact>p{
+    margin-top:20px; /*h3와 마진통합현상 발생하므로 의미 없음*/
+    
+    line-height:18px;j   
+    margin:20px 15px;
+    padding:20px 0 20px 20px;
+    border: 1px solid #e1ddd3;
+}
+
+
+/*dd*/
+
+
+/*푸터영역*/
+footer>p>a{
+    display:block;
+    width:160px;
+    height:25px;
+    margin:0 auto;  /*가로폭이 고정수치일 때 의미가 있음
+                          일정한 width값이 있어야 쓸모*/
+    line-height:25px;
+    text-align:center;
+    border:2px solid #727272;
+    border-radius: 5px;
+}
+
+footer>p>button{
+    /*버튼을 스타일링 할 때는 built-in css 초기화*/
+    padding:0;
+    background:none;
+    border:none;
+    box-sizing:border-box;
+    outline:none;
+    
+    display:block;
+    width:160px;
+    height:25px;
+    margin:0 auto; 
+    font-size:12px;                  
+    line-height:25px;
+    text-align:center;
+    border:2px solid #727272;
+}

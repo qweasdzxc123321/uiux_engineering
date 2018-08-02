@@ -1,0 +1,124 @@
+@charset "utf-8"; 
+
+*{margin:0; padding:0;}
+
+section{
+    
+    padding:20px 0 80px;/*p*/
+    background-color:#2f2f2f;/*bgc*/
+}
+
+section>h2{
+    padding:20px;
+    text-align:center;
+    color:#fff;/*c*/
+    font-weight:500;/*fw*/
+    font-size:22px;/*fz*/
+}
+
+section>.iam{
+    overflow-y:scroll;
+    width:845px;/*w*/
+    height:450px;;/*h*/
+    margin:0 auto;/*m*/
+    background-color: #fff;/*bgc*/
+    *zoom:1;
+}
+
+section>.iam:after{
+    display:block;/*d:b*/
+    clear:both;/*cl:b*/
+    content:'';/*ct*/
+}
+
+section>.iam>dl{
+   
+    float: left; /*fl:l*/
+    position: relative;/*pos:r*/
+    border:1px solid #dedede;
+    width:250px;
+    height:380px;
+    margin-top:20px;/*mt*/
+    margin-left:20px;/*ml*/
+ /*  -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box; = 필요없는거*/
+   box-sizing: border-box;/*bxz:bb*/
+}
+
+section>.iam>dl:nth-child(4){}
+
+section>.iam>dl:nth-child(5){}
+
+section>.iam>dl:nth-child(6){
+    margin-bottom:20px;/*mb*/
+}
+
+section>.iam>dl>dt:before{
+    display:block;
+    width:122px;
+    height:122px;
+    margin:20px auto;
+    border:1px solid blue;
+    border-radius:200px;/*bdrs*/
+    content:'';/*가상선택자 before, after의 필수속성*/
+}
+
+section>.iam>dl:nth-child(1)>dt:before{
+    background-image:url(../images/tellme_01.jpg);
+    background-position: 0; /*bgps*/
+    background-size:100%;/*bgi*/
+}
+
+section>.iam>dl:nth-child(2)>dt:before{
+    background-image:url(../images/tellme_02.jpg);/*bgi*/
+}
+
+section>.iam>dl:nth-child(3)>dt:before{
+    background-image:url(../images/tellme_03.jpg);/*bgi*/
+}
+
+section>.iam>dl:nth-child(4)>dt:before{
+    background-image:url(../images/tellme_04.jpg);/*bgi*/
+}
+
+section>.iam>dl:nth-child(5)>dt:before{
+    background-image:url(../images/tellme_05.jpg);/*bgi*/
+}
+
+section>.iam>dl:nth-child(6)>dt:before{
+    background-image:url(../images/tellme_06.jpg);/*bgi*/
+    background-position:1px 0;
+}
+
+section>.iam>dl>dt{
+    color:#000;
+    font-weight:600;
+    font-size:15px;
+    text-align: center;/*ta:c*/
+}
+section>.iam>dl>dd{
+    
+    line-height:1.8;/*lh*/
+    text-align: center;
+}
+
+section>.iam>dl>dd>span{
+    position: absolute;/*pos:a*/ /*기준점을 dl에잡음*/
+    
+    width:100%;
+    left:0;/*l*/
+    bottom:10px;/*b*/
+    display: block;
+    color: #000;
+    font-weight:600;
+    font-size: 15px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+

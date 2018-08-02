@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>dd</title>
+    
+    <style>
+        /* id명이 wrap인 div 선택자. */
+        div#wrap{border:1px solid black;
+           } /* 상자안에 있는 글자를 가운데 오게 할때 */
+        
+        
+        
+        /* id명 wrap이 붙어있는 모든 요소의 직계자식 h1*/
+        #wrap>h1{ line-height: 200px; /* 한줄의 문장을 박스의 세로 가운데
+            오게 하기 위해서 줄간격의 값을 높이값과 일치시킨다. */
+            text-align: center; 
+            width: 400px; height: 200px;
+            border:10px solid blue;
+            border-radius:50px;
+        }
+        h1+p{width: 100px;
+            height: 100px;
+            border:5px solid pink;
+            text-align: center;
+            line-height: 100px;
+            border-radius:20px 30px 40px 50px;/*각 모서리에 값을 지정할때 왼쪽위부터 시작해서
+            시게방향순서*/}
+            
+            
+      p.ball{
+                width: 150px;
+                height: 150px;
+                line-height:150px;
+                background-color:red;
+                text-align:center;
+                border:redius:70px; 
+                /*보더를 주면 기본적으로 박스의 바깥에 생성되
+                므로 박스의 크기가 보더수치만큼 커진다*/
+
+                border: :10px solid blue
+                    box-sizing: border-box; /*보더가 안쪽으로 생성됨 */
+                border-radius: 85px;
+            }
+        
+    </style>
+</head>
+<body>
+  
+   
+    <!-- id는 #표시, 복수 사용 금지!
+       class 는 복수로 사용가능 하지만 id는 페이지당 한개!
+       만약 id값이 두개 이상 있을 경우
+       제어할 대상을 찾지 못하고 첫번째 요소만 처리한다.-->
+       
+      <!-- id 는 언제 사용할까?
+      1. 레이아웃을 담당하는 요소에 사용,
+      2. 동적인 움직임을 표현하기 위한 자바스크립트와 연동할 때 사용.
+      3. 나머지 요소들은 class와 태그선택자를 이용해서 접근하는것을 권장.-->
+      
+      
+    <div id="wrap">
+        <h1>border-redius학습</h1>
+        
+        <p>사각형</p>
+        
+        <hr>
+        
+        <div>
+            <p class="ball">h</p>
+            <p class="ball">t</p>
+            <p class="ball">m</p>
+            <p class="ball">l</p>
+            <p class="ball">5</p>
+            ws
+        </div>
+    
+    </div>
+
+    
+</body>
+</html>

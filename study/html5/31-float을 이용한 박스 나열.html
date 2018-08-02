@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+       
+        hr{position:static;left:0;margin:50px 0;}
+        
+        .p>li{
+            width:200px;
+            height:100px;
+            line-height:100px;
+            text-align:center;
+            display:inline-block;
+            /*float-right는 잘 안씀. */
+            float: left;}
+        
+        
+        /*클리어 처리 공식 
+        가장 좋은 방식↓↓↓*/
+        .subject:after{
+            clear: both;
+            display:block;
+            content:"";
+            background-color:hotpink;
+        }
+            
+         .subject>li{
+             display:inline-block;
+             text-align:center;
+             width:200px;
+             height:100px;
+             line-height:100px;
+             float:left;
+           
+             
+             
+        }
+        .p>li:nth-child(1){background-color:red;}
+        .p>li:nth-child(2){background-color:olive;}
+        .p>li:nth-child(3){background-color:navajowhite;}
+        .p>li:last-child{background-color:gray;}
+        
+        
+        .clearfix{clear:both; }
+        
+        .subject>li:nth-child(1){background-color:fuchsia;}
+        .subject>li:nth-child(2){background-color:brown;}
+        .subject>li:nth-child(3){background-color:cornflowerblue;}
+        .subject>li:nth-child(4){background-color:lightsteelblue;}
+        
+        /***********************************************************/
+        
+        .text{*zoom:1;}/*구형 ie 브라우저에서 아래의 :after 가상 선택자 구문을 인식하게 하는 코드로써 css핵이라고 불리운다.*/
+        
+/*        안먹히면 위에 줌을 써준다.*/
+        .text:after{ 
+            display: block;
+            clear: both;
+            content:'';
+        }
+        
+        
+        span{
+            display: inline-block;
+            width:100px;
+            height:100px;
+            line-height:100px;
+            text-align: center;
+            float:left;
+        
+            
+     
+        }
+        
+        span:nth-child(1){background-color: darkblue;}
+        span:nth-child(2){background-color: darkblue;}
+        span:nth-child(3){background-color: darkblue;}
+        span:nth-child(4){background-color: darkblue;}
+        span:nth-child(5){background-color: darkblue;}
+
+    </style>
+</head>
+<body>
+ <div id="wrap">
+     <h1 class="text-center">float를 이용한 박스 나열</h1>
+     
+     <ul class="p">
+         <li class="k">html5</li>
+         <li class="b">css</li>
+         <li class="c">Javascript</li>
+         <li class="d">jQuery</li>
+     </ul>
+     
+     <!--1. float의 끌어당기는 영향력을 차단시키는 마감재 역할
+         2. float의 영향을 차단시키는 마감재 사용은 필수시(clear:both;로 마무리)    -->
+     <div class="clearfix"></div>
+     
+     <p>안녕</p>
+     
+     <hr>
+     
+     <ol class="subject">
+         <li>UI/UX</li>
+         <li>포토샵</li>
+         <li>일러스트</li>
+         <li>포트폴리오</li>
+     </ol>
+    
+     
+     <p style="clear:both;">추천과목</p>
+     <p>인기과목</p>
+     
+     <hr>
+   <p class="test">
+       <span class="red">red</span>
+       <span class="blue">blue</span>
+       <span class="yellow">yellow</span>
+       <span class="span green">green</span>
+       <span class="pink">pink</span>
+       <p>박스 </p>
+   
+   
+ </div>
+
+</body>
+</html>

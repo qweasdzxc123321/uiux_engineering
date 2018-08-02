@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{margin:0;padding:0;}
+        
+        header, .lab,.ad,.rab,footer{
+            border:1px solid black;
+        }
+        
+        #wrap{
+
+            width:960px;
+         margin: 0 auto;
+        }
+       
+        section{
+           
+            margin:10px;
+              }
+        
+        section:after{
+            border:1px solid red;
+            display: block;clear: both;content:"";
+        }
+        
+        header>h1{
+            width:960px;
+            height:100px;
+            line-height:100px;
+            background-color: black;
+            text-align:center;
+        }
+        
+        .lab{
+            float:left;
+            width:200px;
+            height:200px;
+            line-height:200px;
+            background-color:blue;
+            text-align:center;
+        }
+        
+           .ad{
+            float:left;
+            width:200px;
+            height:140px;
+            line-height:140px;
+            text-align:center;
+            margin:220px -200px;
+            background-color:palevioletred;
+        }
+        
+        
+        .rab{
+            float:right;
+            width:750px;
+            height:390px;
+            line-height:390px;
+            text-align:center;
+            background-color:yellow;
+            margin:-130px;
+           
+        }
+        
+        footer{
+            
+            width:960px;
+            height:100px;
+            line-height:100px;
+            background-color:brown;
+            text-align:center;
+        }
+        
+        
+    </style>
+</head>
+<body>
+<div id="wrap">
+<header><h1>헤더</h1></header>
+   
+<section>
+    <article class=lab>lab</article>
+    <article class=ad>ad</article>
+    <article class=rab>컨텐츠</article>
+    
+
+    
+</section>
+ 
+   <footer><p>풋터</p></footer>
+  </div>  
+</body>
+</html>
